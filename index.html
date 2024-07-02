@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h3>LOGO</h3>
+        </div>
+        <div class="news-link">
+            <span id="ipl" onclick="navItem('ipl')">IPL</span>
+            <span id="polictics" onclick="navItem('politics and indian politics')">Politics</span>
+            <span id="technology" onclick="navItem('technology')">Technology</span>
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Search" id="input-box">
+            <button id="btn"><i class="fa-solid fa-magnifying-glass" style="color: #030303;"></i></button>
+        </div>
+    </header>
+        <main>
+            <div class="card-container">
+            </div>
+
+            <template id="card-template">
+                <a href="" id="link">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="" id="img">
+                        </div>
+                        <div class="card-content">
+                            <h3 id="news-title">this is the title</h3>
+                            <h6 id="news-source">end of gadget</h6>
+                            <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus officia ut amet eveniet porro quasi aspernatur reprehenderit corrupti, reiciendis nisi.</p>
+                        </div>
+                    </div>
+                </a>
+            </template>
+        </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
